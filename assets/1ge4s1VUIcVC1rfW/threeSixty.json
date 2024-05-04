@@ -1,0 +1,42 @@
+{
+  "version": "3.26.18364.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    },
+    {
+      "title": "Group Image"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5V90CgNQRxF",
+      "title": "Main Toys",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5izgd66DVGx",
+      "title": "Woody Info",
+      "scene_index": "1.2"
+    },
+    {
+      "id": "6TmIXDOMa88",
+      "title": "Buzz Info",
+      "scene_index": "1.3"
+    },
+    {
+      "id": "5iwhQEFPBTe",
+      "title": "Untitled Slide",
+      "scene_index": "2.1"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 1299,
+    "height": 821
+  },
+  "stage": {
+    "width": 1279,
+    "height": 750
+  }
+}
