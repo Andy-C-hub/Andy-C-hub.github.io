@@ -1,0 +1,29 @@
+{
+  "version": "3.34.20804.0",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "6LGF2pAPuH3",
+      "title": "normal operation",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "6pG0yKkNuKE",
+      "title": "backwash",
+      "scene_index": "1.2"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 980,
+    "height": 658
+  },
+  "stage": {
+    "width": 720,
+    "height": 540
+  }
+}
