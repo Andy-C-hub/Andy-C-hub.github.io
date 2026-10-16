@@ -29,3 +29,21 @@ body{font-family:"Dubai", "Segoe UI",sans-serif;font-size:19px}h1,h2,h3,.logo a,
 .mini-gallery summary:hover{background:#EBEFE8}
 @media(hover:hover) and (pointer:fine){.hero-links a:hover,.gallery-link:hover,.case-link:hover,.back-link:hover,.case-next:hover,.mini-gallery summary:hover,.contact-actions a:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(18,59,55,.14)}}
 @media(prefers-reduced-motion:reduce){.hero-links a,.gallery-link,.case-link,.back-link,.case-next,.mini-gallery summary,.contact-actions a{transition:none}.hero-links a:hover,.gallery-link:hover,.case-link:hover,.back-link:hover,.case-next:hover,.mini-gallery summary:hover,.contact-actions a:hover{transform:none}}
+/* Selected animated WebP clips use still thumbnails and an explicit stop control. */
+.media-thumb{position:relative}.media-clip-label{position:absolute;bottom:2px;right:2px;padding:1px 5px;border-radius:3px;background:#123B37;color:#FFFFFF;font-size:11px;line-height:1.5}.media-playback{min-height:44px;padding:10px 18px;margin:14px 0 16px;border:1px solid #006B63;border-radius:6px;background:#F6F5F1;color:#006B63;font:600 16px/1.4 system-ui,sans-serif;cursor:pointer}.media-playback:hover{background:#EBEFE8}.media-playback:focus-visible{outline:3px solid #006B63;outline-offset:3px}
+
+/* Project cards share the contained image-and-caption style of creative cards. */
+#work .work-card{display:flex;flex-direction:column;min-width:0;background:#FFFFFF;border:1px solid #D7DDD8;border-radius:8px;overflow:hidden;color:var(--ink)}
+#work .work-image-container{flex:none;aspect-ratio:auto;padding:12px;border-radius:0;background:var(--forest)}
+#work .work-image-container img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center top;border-radius:8px}
+#work .work-card-content{display:flex;flex:1;flex-direction:column;min-width:0;padding:24px;background:#FFFFFF}
+#work .work-card h3{margin:0 0 12px;font-size:26px;line-height:1.25}
+#work .work-card-content>p{margin:0 0 24px;font-size:18px;line-height:1.65;max-width:none;overflow-wrap:break-word}
+#work .case-link{align-self:flex-start;margin:auto 0 0;border-color:#123B37;color:#123B37;background:transparent}
+#work .work-card:hover,#work .work-card:focus{transform:none;box-shadow:none}
+#work .work-card:hover .work-image-container{box-shadow:none}
+#work .work-card:hover .case-link,#work .work-card:focus .case-link{background:#123B37;color:#FFFFFF}
+#work .work-card:focus-visible{outline:3px solid #006B63;outline-offset:4px;box-shadow:0 8px 20px rgba(18,59,55,.12)}
+@media(hover:hover) and (pointer:fine){#work .work-card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(18,59,55,.12)}}
+@media(max-width:720px){#work .work-card-content{padding:20px}#work .work-card h3{font-size:24px}#work .work-card-content>p{font-size:17px;margin-bottom:20px}}
+@media(prefers-reduced-motion:reduce){#work .work-card{transition:none}#work .work-card:hover,#work .work-card:focus{transform:none}}
