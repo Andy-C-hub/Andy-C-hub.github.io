@@ -15,3 +15,7 @@
 .photo-count{font-size:14px;line-height:1.5;color:#172025}
 @media(max-width:720px){#about .photo-stack.is-ready .about-photo{width:200px}.photo-stack.is-ready{height:300px}.photo-stack{gap:18px 12px}}
 @media(prefers-reduced-motion:reduce){#about .photo-stack.is-ready .about-photo{transition:none}}
+
+/* The crop window fixes height without depending on aspect-ratio support. */
+#about .photo-window{display:block;position:relative;width:100%;height:0;padding-bottom:125%;overflow:hidden}
+#about .photo-window .about-portrait{position:absolute;top:0;left:0;display:block;width:100%;height:100%;max-width:100%;max-height:100%;aspect-ratio:auto;object-fit:cover;object-position:center;border:0;border-radius:1px;box-shadow:none;margin:0}
