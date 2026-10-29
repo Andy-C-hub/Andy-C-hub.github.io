@@ -1,0 +1,36 @@
+/* Institute of Swimming: keep all detail media at its own intrinsic ratio. */
+.swim-main{overflow-wrap:anywhere}
+.swim-main a{color:var(--color-deepteal)}
+.swim-main .case-next{max-width:100%;text-align:center}
+.swim-main .back-link{margin-bottom:32px}
+.swim-lead{max-width:68ch}
+.swim-nav{display:flex;flex-wrap:wrap;gap:8px 24px;padding:16px 0 24px;border-bottom:1px solid #D7DDD8}
+.swim-nav a{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:5px}
+.swim-section{padding:56px 0;border-bottom:1px solid #D7DDD8;scroll-margin-top:24px}
+.swim-section h2{font-size:clamp(28px,3vw,40px);max-width:26ch}
+.swim-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
+.swim-layout>*{min-width:0}
+.swim-copy p{margin-bottom:18px;max-width:65ch}
+.swim-stage{padding:12px;border-radius:12px;background:#EBEFE8}
+.swim-stage img,.swim-stage video{display:block;width:100%;height:auto;object-fit:contain;border-radius:6px}
+.swim-main [hidden]{display:none!important}
+.swim-caption{font-size:16px;line-height:1.5;margin:14px 0 10px}
+.swim-controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:16px}
+.swim-playback{min-height:44px;padding:10px 18px;background:#F6F5F1;border:1px solid #006B63;border-radius:6px;color:#006B63;font:600 16px/1.4 system-ui,sans-serif;cursor:pointer}
+.swim-playback:hover{background:#EBEFE8}
+.swim-main button:focus-visible{outline:3px solid #006B63;outline-offset:3px}
+.swim-status{font-size:14px;line-height:1.5}
+.swim-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.swim-thumb{min-width:0;padding:5px;border:2px solid #D7DDD8;border-radius:8px;background:white;text-decoration:none}
+.swim-thumb:hover{border-color:#006B63}
+.swim-thumb[aria-current="true"]{border-color:#006B63;box-shadow:0 0 0 1px #006B63}
+.swim-thumb img{display:block;width:100%;height:64px;object-fit:contain;background:#F6F5F1;border-radius:3px}
+.swim-thumb span{display:block;font-size:13px;line-height:1.4;margin-top:5px;overflow-wrap:break-word}
+.swim-note{font-size:15px;line-height:1.6;margin-top:20px;max-width:70ch}
+.swim-qualifications{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.swim-qualification{min-width:0;padding:24px;background:#fff;border:1px solid #D7DDD8;border-radius:8px}
+.swim-qualification h3{font-size:25px;line-height:1.25;margin-bottom:16px}
+.swim-qualification p{margin-bottom:20px}
+.swim-end{margin-top:32px}
+@media(max-width:900px){.swim-layout{grid-template-columns:1fr;gap:28px}.swim-section{padding:40px 0}}
+@media(max-width:540px){.swim-thumbs{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.swim-qualifications{grid-template-columns:1fr;gap:20px}.swim-qualification{padding:20px}.swim-stage{padding:8px}.swim-nav{gap:4px 18px}}
